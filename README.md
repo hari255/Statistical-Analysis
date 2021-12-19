@@ -11,18 +11,12 @@ fit1
 fit2=lm(drop~ex+factor(drugs))
 fit2
 anova(fit1,fit2)
-
-
 group1=points(ex[drug1],drop[drug1],col=2,pch=20)
 group2=points(ex[drug2],drop[drug2],col=3,pch=20)
 group3=points(ex[drug3],drop[drug3],col=4,pch=20)
-
 line1=abline(lm(drop[drug1]~ex[drug1]),col=5,pch=20)
 line2=abline(lm(drop[drug2]~ex[drug2]),col=6,pch=20)
 line3=abline(lm(drop[drug3]~ex[drug3]),col=7,pch=20)
-
-
-
 m1=mean(group1)
 s1=sqrt(var(group1))
 m2=mean(group2)
@@ -38,7 +32,6 @@ ssw
 k=3
 t=36
 sst=ssw+ssa
-
 msa=ssa/k-1
 msw=ssa/t-k
 f_stat=msa/msw
