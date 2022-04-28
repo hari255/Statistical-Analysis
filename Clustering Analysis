@@ -1,4 +1,7 @@
 Cluster Anaylsis
 Partitioning of the data into indentical parts or groups is called clustering.
 ex: if we consider data of customers in marketing, therir age, gender and amount purcshsed are called customer clusters/ customer segmentation.
+Examples of recommendation system; Playlist generator for netflix or youtube.
+
+
 
