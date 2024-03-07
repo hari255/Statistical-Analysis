@@ -20,10 +20,6 @@ These are images of handwritten digits from 0 to 9. We will work on this image d
 Note: We will use the datasets module of the sklearn library to load the data and will only consider 6 classes, i.e., digits from 0 to 5.
 
 
-# Hypothesis Testing
-
-
-
 # Understanding Hypothesis Testing:
 
 Hypothesis testing is like being a detective for numbers! 🕵️‍♂️ It helps us figure out if something we believe is true is actually true or just a coincidence. Imagine you're investigating a crime (or in our case, a question). You have a suspect (null hypothesis - H0) and a claim you want to prove (alternative hypothesis - H1). Then, you gather evidence (data) and analyze it to see if there's enough proof to support your claim.
