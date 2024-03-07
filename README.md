@@ -20,7 +20,7 @@ These are images of handwritten digits from 0 to 9. We will work on this image d
 Note: We will use the datasets module of the sklearn library to load the data and will only consider 6 classes, i.e., digits from 0 to 5.
 
 
-# 3. Hypothesis Testing
+# Hypothesis Testing
 
 
 
@@ -33,7 +33,7 @@ In our example, we're like a health detective! Investigating whether offering ma
 **Why it's Important:**
 Hypothesis testing is crucial in science and research. It helps us make decisions based on evidence, ensuring we're not just guessing. In our case, it's about saving lives. If mammography significantly reduces the risk of death, it means a powerful tool in the fight against breast cancer!
 
-# Project: Breast Cancer Battle - Mammography's Impact
+# Project: Mammography's Impact solved using Hypothesis Testing
 
 🌸 Welcome to our Breast Cancer Battle project, where we're on a mission to unveil the superpower of mammography in saving lives using HYPOTHESIS TESTING!
 
