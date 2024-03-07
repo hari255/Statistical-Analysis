@@ -29,7 +29,7 @@ In our example, we're like a health detective! Investigating whether offering ma
 **Why it's Important:**
 Hypothesis testing is crucial in science and research. It helps us make decisions based on evidence, ensuring we're not just guessing. In our case, it's about saving lives. If mammography significantly reduces the risk of death, it means a powerful tool in the fight against breast cancer!
 
-# Project: Mammography's Impact - Solved using Hypothesis Testing
+# 3. Project: Mammography's Impact - Solved using Hypothesis Testing
 
 🌸 Welcome to our Breast Cancer Battle project, where we're on a mission to unveil the superpower of mammography in saving lives using HYPOTHESIS TESTING!
 
