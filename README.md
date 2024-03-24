@@ -43,3 +43,12 @@ In our example, we're like a health detective! Investigating whether offering ma
 **Why it's Important:**
 Hypothesis testing is crucial in science and research. It helps us make decisions based on evidence, ensuring we're not just guessing. In our case, it's about saving lives. If mammography significantly reduces the risk of death, it means a powerful tool in the fight against breast cancer!
 
+# 4. Discriminant Analysis
+
+Discriminant analysis is a statistical technique used in data analysis and machine learning to classify observations into different groups based on their characteristics or features.
+
+Discriminant analysis is used when we have data with known categories (like types of fruits) and want to develop a method to classify new observations into these categories based on their features (like color, size, and shape). It helps us discover the important characteristics that differentiate between different groups, making it easier to classify new data.
+
+You can think, that logistic regression can also capable of doing this, but the main difference lies in how they model the relationship between the features and the categories. Logistic regression estimates the probabilities of belonging to different categories directly, using a logistic function. On the other hand, discriminant analysis models the distribution of the features within each category and uses Bayes' theorem to calculate the probability of belonging to each category.  Logistic regression may be preferred when the relationship between the features and the categories is more linear, while discriminant analysis may be more suitable when the distribution of the features within each category is known or assumed to be normal.
+
+
