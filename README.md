@@ -7,7 +7,7 @@ The app allows the restaurants to receive a direct online order from a customer.
 ***Objective***
 The food aggregator company has stored the data of the different orders made by the registered customers in their online portal. They want to analyze the data to get a fair idea about the demand of different restaurants which will help them in enhancing their customer experience. Performed the data analysis to find answers to these questions that will help the company to improve the business.
 
-# 2. Dimensionality reduction for effecient Classification.
+# 2. Dimensionality Reduction.
 
 
 The MNIST dataset is an acronym that stands for the **Modified National Institute of Standards and Technology** dataset.
@@ -18,8 +18,6 @@ This dataset consists of 60,000 grayscale images, which are small 28x28 pixel im
 These are images of handwritten digits from 0 to 9. We will work on this image data of handwritten digits and will visualize the images in two-dimensional space using the two dimensionality reduction techniques PCA and t-SNE.
 
 Note: We will use the datasets module of the sklearn library to load the data and will only consider 6 classes, i.e., digits from 0 to 5.
-
-
 
 
 # 3. Project: Mammography's Impact - Solved using Hypothesis Testing
