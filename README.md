@@ -32,7 +32,7 @@ Hypothesis testing is like a magical magnifying glass helping us determine if th
 **Our Mission:**
 Our mission is to make the world healthier by figuring out if mammography is a true superhero in reducing the risk of death from breast cancer. We're not just crunching numbers; we're saving lives and making a real impact on healthcare!
 
-# Understanding Hypothesis Testing:
+***Understanding Hypothesis Testing***
 
 Hypothesis testing is like being a detective for numbers! 🕵️‍♂️ It helps us figure out if something we believe is true is actually true or just a coincidence. Imagine you're investigating a crime (or in our case, a question). You have a suspect (null hypothesis - H0) and a claim you want to prove (alternative hypothesis - H1). Then, you gather evidence (data) and analyze it to see if there's enough proof to support your claim.
 
