@@ -7,6 +7,11 @@ The app allows the restaurants to receive a direct online order from a customer.
 ***Objective***
 The food aggregator company has stored the data of the different orders made by the registered customers in their online portal. They want to analyze the data to get a fair idea about the demand of different restaurants which will help them in enhancing their customer experience. Performed the data analysis to find answers to these questions that will help the company to improve the business.
 
+
+
+<img width="468" alt="image" src="https://github.com/hari255/Statistical-Analytics/assets/59302293/886265f9-61d0-4c11-9a0d-066d05bb357a">
+
+
 # 2. Dimensionality Reduction.
 
 
