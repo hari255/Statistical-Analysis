@@ -1,4 +1,4 @@
-# 1. FoodHub - Exploratory Data Analysis**
+# 1. FoodHub - Exploratory Data Analysis
 ## Context
 The number of restaurants in New York is increasing day by day. Lots of students and busy professionals rely on those restaurants due to their hectic lifestyles. Online food delivery service is a great option for them. It provides them with good food from their favorite restaurants. A food aggregator company FoodHub offers access to multiple restaurants through a single smartphone app.
 
@@ -72,19 +72,132 @@ percentage =(greater_than_20.shape[0] / data.shape[0]) * 100
 ### Performing Exploratory data analytics or visual representation of data could help us to identify the patterns and make informed decisions. It gives us a good starting point while building a predective model on the dataset. 
 
 ---
+
 # 2. Dimensionality Reduction.
 
 
-The MNIST dataset is an acronym that stands for the **Modified National Institute of Standards and Technology** dataset.
+
+**Principal Component Analysis (PCA) and t-Distributed Stochastic Neighbor Embedding (t-SNE) are two popular dimensionality reduction techniques used in data science. They help simplify complex datasets, making it easier to visualize and analyze data. Here’s a detailed guide to both methods**
+
+| Option | Description |
+| ------ | ----------- |
+| **PCA**  | PCA is a method that reduces the number of dimensions (features) in your data while keeping as much information as possible. It creates new features that are combinations of the original ones. The first new feature captures the most variation in the data, the second new feature captures the second most variation, and so on. This helps in simplifying and visualizing the data. |
+| **T-SNE**|t-SNE is a technique that reduces the number of dimensions in your data to make it easier to visualize. It focuses on keeping similar points close together in a new, lower-dimensional space, like 2D or 3D, so you can see clusters and patterns that might be hidden in the original high-dimensional data.|
 
 ***Context and Objective*** 
+The MNIST dataset is an acronym that stands for the **Modified National Institute of Standards and Technology** dataset.
+This dataset consists of 60,000 grayscale images, which are of 28x28 pixel images.
+These are images of handwritten digits from 0 to 9. We will work on this data of handwritten digits images and visualize the images in two-dimensional space using the above discussed dimensionality reduction techniques PCA and t-SNE.
 
-This dataset consists of 60,000 grayscale images, which are small 28x28 pixel images.
-These are images of handwritten digits from 0 to 9. We will work on this image data of handwritten digits and will visualize the images in two-dimensional space using the two dimensionality reduction techniques PCA and t-SNE.
 
 Note: We will use the datasets module of the sklearn library to load the data and will only consider 6 classes, i.e., digits from 0 to 5.
 
+
+### t-SNE embedding of the digits dataset
+```py
+
+
+
+print("Computing t-SNE embedding")
+
+t0 = time()
+
+tsne = manifold.TSNE(n_components = 2, init = 'pca', random_state = 0) 
+
+X_tsne = tsne.fit_transform(X)
+
+t1 = time()
+
+tsne_time = t1-t0
+
+print("t-SNE-Embeddings in time {}".format(tsne_time),"\n", X_tsne)
+
+```
+
+### Projection on the first 2 principal components using PCA
+
+``` py
+print("Computing PCA projection")
+
+t0 = time()
+
+X_pca = decomposition.PCA(n_components = 2).fit_transform(X)
+
+t1 = time()
+
+pca_time = t1 - t0
+
+print("PCA projections in time {}".format(pca_time), "\n", X_pca)
+
+print("***************************************************")
+
+```
+
+```Note: The following code taken from scikit-learn is meant to annotate the embeddings created by PCA and t-SNE and provide a more labeled and informative visualization.```
+
+```py
+def plot_embedding(X, title=None):              # Passing the embedded array and the title of the graph
+    
+    print(X)                                        
+    
+    x_min, x_max = np.min(X, 0), np.max(X, 0)   # Finding the max and min of the passed array
+    
+    X = (X - x_min) / (x_max - x_min)           # Scaling the array, new values are between 0 and 1
+
+    plt.figure(figsize = (12, 12))               # Setting the figure size to a sufficiently large value
+    
+    ax = plt.subplot(111)
+    
+    for i in range(X.shape[0]):
+        
+        plt.text(X[i, 0], X[i, 1], str(y[i]),
+                 
+                 color = plt.cm.Set1(y[i] / 10.),
+                 
+                 fontdict = {'weight': 'bold', 'size': 9})
+
+    if hasattr(offsetbox, 'AnnotationBbox'):
+        
+        # only print thumbnails with matplotlib > 1.0
+        shown_images = np.array([[1., 1.]])      # Just something big
+        
+        for i in range(X.shape[0]):
+            
+            dist = np.sum((X[i] - shown_images) ** 2, 1)
+            
+            if np.min(dist) < 4e-3:
+                
+                # don't show points that are too close
+                continue
+            
+            shown_images = np.r_[shown_images, [X[i]]]
+            
+            imagebox = offsetbox.AnnotationBbox(offsetbox.OffsetImage(digits.images[i], cmap = plt.cm.gray_r), X[i])
+            
+            ax.add_artist(imagebox)
+    
+    plt.xticks([]), plt.yticks([])
+    
+    if title is not None:
+        
+        plt.title(title)
+    
+    plt.show()
+
+```
+
+
+<img width="432" alt="image" src="https://github.com/hari255/Statistical-Analytics/assets/59302293/19f276b2-d51f-43d4-ab6b-dcc6e37ec2e4">
+
+
+
+<img width="432" alt="image" src="https://github.com/hari255/Statistical-Analytics/assets/59302293/ccbfc3aa-05a4-4bf5-9958-1a5959efa4ca">
+
+
+
+
 ---
+
 # 3. Project: Mammography's Impact - Solved using Hypothesis Testing
 
 
