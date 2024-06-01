@@ -19,20 +19,57 @@ There are a total of 14 difffernet cuisines in the dataset.
 
 <img width="468" alt="image" src="https://github.com/hari255/Statistical-Analytics/assets/59302293/8ea09fe5-c707-47cb-a746-473e498ce253">
 
-`
-Above plot gives us an idea on the popular and busy restanurants, this is curcial interms of allocating delivery drives in an area*
-`
 
+---
+
+**Week-day Vs Weekends**
+
+
+`
+To effectively understand the dynamics of online orders, quantifying the orders on weekdays versus weekends is crucial.
+`
+<img width="395" alt="image" src="https://github.com/hari255/Statistical-Analytics/assets/59302293/e7a3c8c7-96c3-4923-80df-0c5d691112ba">
+
+
+---
 
 **Ratings Distribution**
 
+
+`
+Below plot gives us an idea on the popular or busy restanurants, this is curcial interms of allocating more delivery drives in the area during peak hours*
+`
+
 <img width="289" alt="image" src="https://github.com/hari255/Statistical-Analytics/assets/59302293/264ee188-583e-4d99-b32a-d9f5873c0a9f">
 
+---
+**Deliery time**
+`
+This plot tells us that the avergae time taken to delivery an order, Most of the orders takes 45-60 mins to deliver.
+`
 
+<img width="382" alt="image" src="https://github.com/hari255/Statistical-Analytics/assets/59302293/46582a89-886f-4a45-ae51-0668b69b827a">
 
+---
 
+**In the conetxt of the problem, it's important to know the how much money people of spend on food**
 
+<img width="385" alt="image" src="https://github.com/hari255/Statistical-Analytics/assets/59302293/3cbf5629-2b0b-4969-b762-774cc01da69b">
 
+##### Let's see the number of orders that cost more than $20
+
+``` py
+percentage_of_every_order = (data['cost_of_the_order'] / data['cost_of_the_order'].sum()) * 100
+greater_than_20 = data[data['cost_of_the_order']>20]
+percentage =(greater_than_20.shape[0] / data.shape[0]) * 100
+
+```
+
+```
+29.241 percent of the orders placed were more than $20.
+```
+
+### Performing Exploratory data analytics or visual representation of data could help us to identify the patterns and make informed decisions. It gives us a good starting point while building a predective model on the dataset. 
 
 ---
 # 2. Dimensionality Reduction.
