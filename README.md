@@ -1,12 +1,40 @@
 # 1. FoodHub - Exploratory Data Analysis**
-**Context**
+## Context
 The number of restaurants in New York is increasing day by day. Lots of students and busy professionals rely on those restaurants due to their hectic lifestyles. Online food delivery service is a great option for them. It provides them with good food from their favorite restaurants. A food aggregator company FoodHub offers access to multiple restaurants through a single smartphone app.
 
 The app allows the restaurants to receive a direct online order from a customer. The app assigns a delivery person from the company to pick up the order after it is confirmed by the restaurant. The delivery person then uses the map to reach the restaurant and waits for the food package. Once the food package is handed over to the delivery person, he/she confirms the pick-up in the app and travels to the customer's location to deliver the food. The delivery person confirms the drop-off in the app after delivering the food package to the customer. The customer can rate the order in the app. The food aggregator earns money by collecting a fixed margin of the delivery order from the restaurants.
 
-***Objective***
+## Objective
 The food aggregator company has stored the data of the different orders made by the registered customers in their online portal. They want to analyze the data to get a fair idea about the demand of different restaurants which will help them in enhancing their customer experience. Performed the data analysis to find answers to these questions that will help the company to improve the business.
 
+### Exploratory Data Anlaytics
+
+Exploratory Data Analysis (EDA) is a crucial step in the data science process. It involves analyzing data sets to summarize their main characteristics, often using visual methods. EDA helps in understanding the data and uncovering patterns. 
+
+**Distinct Cuisines**
+
+`
+There are a total of 14 difffernet cuisines in the dataset.
+`
+
+<img width="468" alt="image" src="https://github.com/hari255/Statistical-Analytics/assets/59302293/8ea09fe5-c707-47cb-a746-473e498ce253">
+
+`
+Above plot gives us an idea on the popular and busy restanurants, this is curcial interms of allocating delivery drives in an area*
+`
+
+
+**Ratings Distribution**
+
+<img width="289" alt="image" src="https://github.com/hari255/Statistical-Analytics/assets/59302293/264ee188-583e-4d99-b32a-d9f5873c0a9f">
+
+
+
+
+
+
+
+---
 # 2. Dimensionality Reduction.
 
 
@@ -19,7 +47,7 @@ These are images of handwritten digits from 0 to 9. We will work on this image d
 
 Note: We will use the datasets module of the sklearn library to load the data and will only consider 6 classes, i.e., digits from 0 to 5.
 
-
+---
 # 3. Project: Mammography's Impact - Solved using Hypothesis Testing
 
 
