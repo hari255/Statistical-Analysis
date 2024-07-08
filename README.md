@@ -198,18 +198,17 @@ def plot_embedding(X, title=None):              # Passing the embedded array and
 
 ---
 
-# 3. Project: Mammography's Impact - Solved using Hypothesis Testing
-
+# 3. Hypothesis Testing
+`I've used ChatGPT to write the content below, it's done a great job making it an interesting story`
 
 **The Quest:**
 We're investigating whether offering mammography is a game-changer in the fight against breast cancer. We use data to prove that mammography significantly reduces the risk of death.
 
-**The Superpower:**
+**Tool**
 Hypothesis testing is like a magical magnifying glass helping us determine if the difference in death rates between those who got mammography and those who didn't is real or just a coincidence. We're not just hoping; we're scientifically proving that mammography is a hero in the battle against breast cancer.
 
 **Our Mission:**
-Our mission is to make the world healthier by figuring out if mammography is a true superhero in reducing the risk of death from breast cancer. We're not just crunching numbers; we're saving lives and making a real impact on healthcare!
-
+Our mission is to make the world healthier by figuring out if mammography is a true superhero in reducing the risk of death from breast cancer.
 ***Understanding Hypothesis Testing***
 
 Hypothesis testing is like being a detective for numbers! 🕵️‍♂️ It helps us figure out if something we believe is true is actually true or just a coincidence. Imagine you're investigating a crime (or in our case, a question). You have a suspect (null hypothesis - H0) and a claim you want to prove (alternative hypothesis - H1). Then, you gather evidence (data) and analyze it to see if there's enough proof to support your claim.
