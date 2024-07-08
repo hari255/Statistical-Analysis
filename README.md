@@ -214,10 +214,9 @@ Our mission is to make the world healthier by figuring out if mammography is a t
 It helps us figure out if something we believe is true is actually true or just a coincidence. Imagine you're investigating a crime (or in our case, a question), you have a suspect (null hypothesis - H0) and a claim you want to prove (alternative hypothesis - H1). Then, you gather evidence (data) and analyze it to see if there's enough proof to support your claim.
 
 **Hypothesis Notation**
-`+ H0 - Null Hypothesis`
-`+ H1 - Alternative Hypothesis`
++ H0 - Null Hypothesis
++ H1 - Alternative Hypothesis
 
-  
 In our example, we're like a health detective! Investigating whether offering mammography (the suspect) significantly reduces the risk of death from breast cancer (the claim). Hypothesis testing helps you decide if the difference in death rates is real or just due to chance.
 
 **Why it's Important:**
@@ -225,7 +224,7 @@ Hypothesis testing is crucial in science and research. It helps us make decision
 
 # 4. Discriminant Analysis
 
-Discriminant analysis is a statistical technique used in data analysis and machine learning to classify observations into different groups based on their characteristics or features.
+Discriminant analysis is a statistical technique used in `Data analysis` and `Machine learning` to classify observations into different groups based on their characteristics or features.
 
 Discriminant analysis is used when we have data with known categories (like types of fruits) and want to develop a method to classify new observations into these categories based on their features (like color, size, and shape). It helps us discover the important characteristics that differentiate between different groups, making it easier to classify new data.
 
