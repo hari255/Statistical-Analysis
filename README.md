@@ -200,21 +200,27 @@ def plot_embedding(X, title=None):              # Passing the embedded array and
 
 # 3. Project: Mammography's Impact - Solved using Hypothesis Testing
 
+`I tried to use some simple terminology in explaining Hypothesis testing with the help of ChatGPT. The statistical terms in the Hypothesis Testing is often consfusing for new people.`
 
 **The Quest:**
 We're investigating whether offering mammography is a game-changer in the fight against breast cancer. We use data to prove that mammography significantly reduces the risk of death.
 
 **The Superpower:**
-Hypothesis testing is like a magical magnifying glass helping us determine if the difference in death rates between those who got mammography and those who didn't is real or just a coincidence. We're not just hoping; we're scientifically proving that mammography is a hero in the battle against breast cancer.
+Hypothesis testing is like a magnifying glass helping us determine if the difference in death rates between those who got mammography and those who didn't is real or just a coincidence.
 
 **Our Mission:**
-Our mission is to make the world healthier by figuring out if mammography is a true superhero in reducing the risk of death from breast cancer. We're not just crunching numbers; we're saving lives and making a real impact on healthcare!
+Our mission is to find the effectiveness of `Mammography` in reducing the risk of death from breast cancer.
 
-***Understanding Hypothesis Testing***
+**Hypothesis Testing**
 
-Hypothesis testing is like being a detective for numbers! 🕵️‍♂️ It helps us figure out if something we believe is true is actually true or just a coincidence. Imagine you're investigating a crime (or in our case, a question). You have a suspect (null hypothesis - H0) and a claim you want to prove (alternative hypothesis - H1). Then, you gather evidence (data) and analyze it to see if there's enough proof to support your claim.
+It helps us figure out if something we believe is true, is actually true or just a coincidence. Imagine you're investigating a crime (or in our case, a question). You have a suspect `Null hypothesis - H0` and a claim you want to prove `Alternative hypothesis - H1`. Then, you gather evidence `DATA` and analyze it to see if there's enough proof to support your claim.
 
-In our example, we're like a health detective! Investigating whether offering mammography (the suspect) significantly reduces the risk of death from breast cancer (the claim). Hypothesis testing helps you decide if the difference in death rates is real or just due to chance.
+**Hypothesis Notation**
++ `H0 - Null Hypothesis`
++ `H1 - Alternative Hypothesis`
+  
+
+In our example,  Investigating whether offering mammography significantly reduces the risk of death from breast cancer. Hypothesis testing helps you decide if the difference in death rates is real or just due to chance.
 
 **Why it's Important:**
 Hypothesis testing is crucial in science and research. It helps us make decisions based on evidence, ensuring we're not just guessing. In our case, it's about saving lives. If mammography significantly reduces the risk of death, it means a powerful tool in the fight against breast cancer!
