@@ -199,7 +199,7 @@ def plot_embedding(X, title=None):              # Passing the embedded array and
 ---
 
 # 3. Hypothesis Testing
-`I've used ChatGPT to write the content below, it's done a great job making it an interesting story`
+`I've used ChatGPT to write the content below, it's done a great job by making it an interesting story`
 
 **The Quest:**
 We're investigating whether offering mammography is a game-changer in the fight against breast cancer. We use data to prove that mammography significantly reduces the risk of death.
@@ -209,10 +209,15 @@ Hypothesis testing is like a magical magnifying glass helping us determine if th
 
 **Our Mission:**
 Our mission is to make the world healthier by figuring out if mammography is a true superhero in reducing the risk of death from breast cancer.
+
 ***Understanding Hypothesis Testing***
+It helps us figure out if something we believe is true is actually true or just a coincidence. Imagine you're investigating a crime (or in our case, a question), you have a suspect (null hypothesis - H0) and a claim you want to prove (alternative hypothesis - H1). Then, you gather evidence (data) and analyze it to see if there's enough proof to support your claim.
 
-Hypothesis testing is like being a detective for numbers! 🕵️‍♂️ It helps us figure out if something we believe is true is actually true or just a coincidence. Imagine you're investigating a crime (or in our case, a question). You have a suspect (null hypothesis - H0) and a claim you want to prove (alternative hypothesis - H1). Then, you gather evidence (data) and analyze it to see if there's enough proof to support your claim.
+**Hypothesis Notation**
+`+ H0 - Null Hypothesis`
+`+ H1 - Alternative Hypothesis`
 
+  
 In our example, we're like a health detective! Investigating whether offering mammography (the suspect) significantly reduces the risk of death from breast cancer (the claim). Hypothesis testing helps you decide if the difference in death rates is real or just due to chance.
 
 **Why it's Important:**
