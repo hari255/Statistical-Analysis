@@ -114,6 +114,10 @@ print("t-SNE-Embeddings in time {}".format(tsne_time),"\n", X_tsne)
 
 ```
 
+<img width="432" alt="image" src="https://github.com/hari255/Statistical-Analytics/assets/59302293/19f276b2-d51f-43d4-ab6b-dcc6e37ec2e4">
+
+
+
 ### Projection on the first 2 principal components using PCA
 
 ``` py
@@ -135,59 +139,7 @@ print("***************************************************")
 
 ```Note: The following code taken from scikit-learn is meant to annotate the embeddings created by PCA and t-SNE and provide a more labeled and informative visualization.```
 
-```py
-def plot_embedding(X, title=None):              # Passing the embedded array and the title of the graph
-    
-    print(X)                                        
-    
-    x_min, x_max = np.min(X, 0), np.max(X, 0)   # Finding the max and min of the passed array
-    
-    X = (X - x_min) / (x_max - x_min)           # Scaling the array, new values are between 0 and 1
 
-    plt.figure(figsize = (12, 12))               # Setting the figure size to a sufficiently large value
-    
-    ax = plt.subplot(111)
-    
-    for i in range(X.shape[0]):
-        
-        plt.text(X[i, 0], X[i, 1], str(y[i]),
-                 
-                 color = plt.cm.Set1(y[i] / 10.),
-                 
-                 fontdict = {'weight': 'bold', 'size': 9})
-
-    if hasattr(offsetbox, 'AnnotationBbox'):
-        
-        # only print thumbnails with matplotlib > 1.0
-        shown_images = np.array([[1., 1.]])      # Just something big
-        
-        for i in range(X.shape[0]):
-            
-            dist = np.sum((X[i] - shown_images) ** 2, 1)
-            
-            if np.min(dist) < 4e-3:
-                
-                # don't show points that are too close
-                continue
-            
-            shown_images = np.r_[shown_images, [X[i]]]
-            
-            imagebox = offsetbox.AnnotationBbox(offsetbox.OffsetImage(digits.images[i], cmap = plt.cm.gray_r), X[i])
-            
-            ax.add_artist(imagebox)
-    
-    plt.xticks([]), plt.yticks([])
-    
-    if title is not None:
-        
-        plt.title(title)
-    
-    plt.show()
-
-```
-
-
-<img width="432" alt="image" src="https://github.com/hari255/Statistical-Analytics/assets/59302293/19f276b2-d51f-43d4-ab6b-dcc6e37ec2e4">
 
 
 
@@ -199,28 +151,38 @@ def plot_embedding(X, title=None):              # Passing the embedded array and
 ---
 
 # 3. Hypothesis Testing
-`I've used ChatGPT to write the content below, it's done a great job by making it an interesting story`
 
 **The Quest:**
-We're investigating whether offering mammography is a game-changer in the fight against breast cancer. We use data to prove that mammography significantly reduces the risk of death.
+We're investigating whether offering mammography is a game-changer in the fight against breast cancer. We use data to prove that mammography significantly reduces the risk of death using a technique in Statistics called **Hypothesis Testing**.
 
 **Tool**
-Hypothesis testing is like a magical magnifying glass helping us determine if the difference in death rates between those who got mammography and those who didn't is real or just a coincidence. We're not just hoping; we're scientifically proving that mammography is a hero in the battle against breast cancer.
+Hypothesis testing is like a magnifying glass helping us determine if the difference in death rates between those who got mammography and those who didn't is real or just a coincidence. We're not just hoping; we're scientifically proving that mammography is a hero in the battle against breast cancer based on our data.
 
-**Our Mission:**
-Our mission is to make the world healthier by figuring out if mammography is a true superhero in reducing the risk of death from breast cancer.
 
-***Understanding Hypothesis Testing***
-It helps us figure out if something we believe is true is actually true or just a coincidence. Imagine you're investigating a crime (or in our case, a question), you have a suspect (null hypothesis - H0) and a claim you want to prove (alternative hypothesis - H1). Then, you gather evidence (data) and analyze it to see if there's enough proof to support your claim.
+Hypothesis testing helps us figure out if something we believe is true, Is actually true or just a coincidence?
+
+To set up the testing, below is the standard notation for Hypothesis testing which is similar acrooss all textbooks.
 
 **Hypothesis Notation**
 + H0 - Null Hypothesis
 + H1 - Alternative Hypothesis
 
-In our example, we're like a health detective! Investigating whether offering mammography (the suspect) significantly reduces the risk of death from breast cancer (the claim). Hypothesis testing helps you decide if the difference in death rates is real or just due to chance.
-
 **Why it's Important:**
 Hypothesis testing is crucial in science and research. It helps us make decisions based on evidence, ensuring we're not just guessing. In our case, it's about saving lives. If mammography significantly reduces the risk of death, it means a powerful tool in the fight against breast cancer!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # 4. Discriminant Analysis
 
