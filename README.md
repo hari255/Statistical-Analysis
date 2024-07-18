@@ -1,6 +1,6 @@
 
 
-# 2. Dimensionality Reduction.
+# 1. Dimensionality Reduction.
 
 
 
@@ -41,6 +41,10 @@ print("t-SNE-Embeddings in time {}".format(tsne_time),"\n", X_tsne)
 
 ```
 
+<img width="432" alt="image" src="https://github.com/hari255/Statistical-Analytics/assets/59302293/19f276b2-d51f-43d4-ab6b-dcc6e37ec2e4">
+
+---
+
 ### Projection on the first 2 principal components using PCA
 
 ``` py
@@ -60,63 +64,6 @@ print("***************************************************")
 
 ```
 
-```Note: The following code taken from scikit-learn is meant to annotate the embeddings created by PCA and t-SNE and provide a more labeled and informative visualization.```
-
-```py
-def plot_embedding(X, title=None):              # Passing the embedded array and the title of the graph
-    
-    print(X)                                        
-    
-    x_min, x_max = np.min(X, 0), np.max(X, 0)   # Finding the max and min of the passed array
-    
-    X = (X - x_min) / (x_max - x_min)           # Scaling the array, new values are between 0 and 1
-
-    plt.figure(figsize = (12, 12))               # Setting the figure size to a sufficiently large value
-    
-    ax = plt.subplot(111)
-    
-    for i in range(X.shape[0]):
-        
-        plt.text(X[i, 0], X[i, 1], str(y[i]),
-                 
-                 color = plt.cm.Set1(y[i] / 10.),
-                 
-                 fontdict = {'weight': 'bold', 'size': 9})
-
-    if hasattr(offsetbox, 'AnnotationBbox'):
-        
-        # only print thumbnails with matplotlib > 1.0
-        shown_images = np.array([[1., 1.]])      # Just something big
-        
-        for i in range(X.shape[0]):
-            
-            dist = np.sum((X[i] - shown_images) ** 2, 1)
-            
-            if np.min(dist) < 4e-3:
-                
-                # don't show points that are too close
-                continue
-            
-            shown_images = np.r_[shown_images, [X[i]]]
-            
-            imagebox = offsetbox.AnnotationBbox(offsetbox.OffsetImage(digits.images[i], cmap = plt.cm.gray_r), X[i])
-            
-            ax.add_artist(imagebox)
-    
-    plt.xticks([]), plt.yticks([])
-    
-    if title is not None:
-        
-        plt.title(title)
-    
-    plt.show()
-
-```
-
-
-<img width="432" alt="image" src="https://github.com/hari255/Statistical-Analytics/assets/59302293/19f276b2-d51f-43d4-ab6b-dcc6e37ec2e4">
-
-
 
 <img width="432" alt="image" src="https://github.com/hari255/Statistical-Analytics/assets/59302293/ccbfc3aa-05a4-4bf5-9958-1a5959efa4ca">
 
@@ -126,7 +73,12 @@ def plot_embedding(X, title=None):              # Passing the embedded array and
 
 
 
-# 1. FoodHub - Exploratory Data Analysis
+# 2. FoodHub - Exploratory Data Analysis
+```I believe before making any assumnptions on the data and builidng models, It is important to ask ourselves questions like;  (whether this data is correct or enough? To what extreeme/level I can relly on this data?). ``` 
+
+EDA is a technique to understand data and make informed decisions.
+
+
 ## Context
 The number of restaurants in New York is increasing day by day. Lots of students and busy professionals rely on those restaurants due to their hectic lifestyles. Online food delivery service is a great option for them. It provides them with good food from their favorite restaurants. A food aggregator company FoodHub offers access to multiple restaurants through a single smartphone app.
 
@@ -166,39 +118,15 @@ To effectively understand the dynamics of online orders, quantifying the orders 
 
 
 `
-Below plot gives us an idea on the popular or busy restanurants, this is curcial interms of allocating more delivery drives in the area during peak hours*
+Below plot gives us an idea on the popular/busy restanurants, this information is curcial interms of allocating more delivery drives in the area during peak hours*
 `
 
 <img width="289" alt="image" src="https://github.com/hari255/Statistical-Analytics/assets/59302293/264ee188-583e-4d99-b32a-d9f5873c0a9f">
 
----
-**Deliery time**
-`
-This plot tells us that the avergae time taken to delivery an order, Most of the orders takes 45-60 mins to deliver.
-`
 
-<img width="382" alt="image" src="https://github.com/hari255/Statistical-Analytics/assets/59302293/46582a89-886f-4a45-ae51-0668b69b827a">
+### Performing Exploratory data analytics on data helps us to identify the patterns and make informed decisions. It gives us a good starting point while building a predective model.
 
----
 
-**In the conetxt of the problem, it's important to know the how much money people of spend on food**
-
-<img width="385" alt="image" src="https://github.com/hari255/Statistical-Analytics/assets/59302293/3cbf5629-2b0b-4969-b762-774cc01da69b">
-
-##### Let's see the number of orders that cost more than $20
-
-``` py
-percentage_of_every_order = (data['cost_of_the_order'] / data['cost_of_the_order'].sum()) * 100
-greater_than_20 = data[data['cost_of_the_order']>20]
-percentage =(greater_than_20.shape[0] / data.shape[0]) * 100
-
-```
-
-```
-29.241 percent of the orders placed were more than $20.
-```
-
-### Performing Exploratory data analytics or visual representation of data could help us to identify the patterns and make informed decisions. It gives us a good starting point while building a predective model on the dataset. 
 
 ---
 
@@ -208,25 +136,24 @@ percentage =(greater_than_20.shape[0] / data.shape[0]) * 100
 `I've used ChatGPT to write the content below, it's done a great job by making it an interesting story`
 
 **The Quest:**
-We're investigating whether offering mammography is a game-changer in the fight against breast cancer. We use data to prove that mammography significantly reduces the risk of death.
+We're investigating whether offering mammography is a game-changer in the fight against breast cancer. We use data to prove that mammography significantly reduces the risk of death leveraging a technique from statistics called **Hypothesis testing**.
 
 **Tool**
-Hypothesis testing is like a magical magnifying glass helping us determine if the difference in death rates between those who got mammography and those who didn't is real or just a coincidence. We're not just hoping; we're scientifically proving that mammography is a hero in the battle against breast cancer.
+Hypothesis testing is like a magnifying glass helping us determine if the difference in death rates between those who got mammography and those who didn't, Is real or just a coincidence?. We're not just hoping; we're scientifically proving that mammography is a hero in the battle against breast cancer.
 
-**Our Mission:**
-Our mission is to make the world healthier by figuring out if mammography is a true superhero in reducing the risk of death from breast cancer.
 
-***Understanding Hypothesis Testing***
+**Understanding Hypothesis Testing**
 It helps us figure out if something we believe is true is actually true or just a coincidence. Imagine you're investigating a crime (or in our case, a question), you have a suspect (null hypothesis - H0) and a claim you want to prove (alternative hypothesis - H1). Then, you gather evidence (data) and analyze it to see if there's enough proof to support your claim.
 
-**Hypothesis Notation**
+**Hypothesis Notation- It is a standard notation used in most of the Statistics Texbooks**
+
 + H0 - Null Hypothesis
 + H1 - Alternative Hypothesis
 
-In our example, we're like a health detective! Investigating whether offering mammography (the suspect) significantly reduces the risk of death from breast cancer (the claim). Hypothesis testing helps you decide if the difference in death rates is real or just due to chance.
-
 **Why it's Important:**
 Hypothesis testing is crucial in science and research. It helps us make decisions based on evidence, ensuring we're not just guessing. In our case, it's about saving lives. If mammography significantly reduces the risk of death, it means a powerful tool in the fight against breast cancer!
+
+
 
 # 4. Discriminant Analysis
 
