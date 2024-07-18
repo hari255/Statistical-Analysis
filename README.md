@@ -2,9 +2,9 @@
 
 # 1. Dimensionality Reduction.
 
+**Dimensionality reduction is a process used in machine learning and statistics to reduce the number of input variables in a dataset while retaining as much information as possible. This technique is crucial for handling high-dimensional data, improving model performance, and making data visualization easier. There are several methods for dimensionality reduction, including Principal Component Analysis (PCA), t-Distributed Stochastic Neighbor Embedding (t-SNE), Linear Discriminant Analysis (LDA), and Autoencoders.
 
-
-**Principal Component Analysis (PCA) and t-Distributed Stochastic Neighbor Embedding (t-SNE) are two popular dimensionality reduction techniques used in data science. They help simplify complex datasets, making it easier to visualize and analyze data. Here’s a detailed guide to both methods**
+Principal Component Analysis (PCA) and t-Distributed Stochastic Neighbor Embedding (t-SNE) are two popular dimensionality reduction techniques used in data science. They help simplify complex datasets, making it easier to visualize and analyze data. Here’s a detailed guide to both methods**
 
 | Option | Description |
 | ------ | ----------- |
