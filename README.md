@@ -138,8 +138,13 @@ Below plot gives us an idea on the popular/busy restanurants, this information i
 **The Quest:**
 We're investigating whether offering mammography is a game-changer in the fight against breast cancer. We use data to prove that mammography significantly reduces the risk of death leveraging a technique from statistics called **Hypothesis testing**.
 
+ <img width="403" alt="Screenshot 2024-07-20 at 1 03 45 PM" src="https://github.com/user-attachments/assets/7e747351-dcaa-4b46-8e38-8372f0a8baac">
+
+
 **Tool**
 Hypothesis testing is like a magnifying glass helping us determine if the difference in death rates between those who got mammography and those who didn't, Is real or just a coincidence?. We're not just hoping; we're scientifically proving that mammography is a hero in the battle against breast cancer.
+
+
 
 
 **Understanding Hypothesis Testing**
