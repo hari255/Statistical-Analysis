@@ -153,6 +153,10 @@ It helps us figure out if something we believe is true is actually true or just 
 **Why it's Important:**
 Hypothesis testing is crucial in science and research. It helps us make decisions based on evidence, ensuring we're not just guessing. In our case, it's about saving lives. If mammography significantly reduces the risk of death, it means a powerful tool in the fight against breast cancer!
 
+<img width="881" alt="Screenshot 2024-07-20 at 1 02 50 PM" src="https://github.com/user-attachments/assets/6f51612b-c20f-4d4a-a70c-8310c9d6ca44">
+
+
+
 
 
 # 4. Discriminant Analysis
