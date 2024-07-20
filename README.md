@@ -133,10 +133,13 @@ Below plot gives us an idea on the popular/busy restanurants, this information i
 ---
 
 # 3. Hypothesis Testing
-`I've used ChatGPT to write the content below, it's done a great job by making it an interesting story`
+Hypothesis testing is a statistical method used to determine if there is enough evidence in a sample of data to infer that a certain condition is true for the entire population. In the context of this project, hypothesis testing can be used to assess whether the marketing campaign had a significant effect on conversions.
+
 
 **The Quest:**
 We're investigating whether offering mammography is a game-changer in the fight against breast cancer. We use data to prove that mammography significantly reduces the risk of death leveraging a technique from statistics called **Hypothesis testing**.
+
+We
 
  <img width="403" alt="Screenshot 2024-07-20 at 1 03 45 PM" src="https://github.com/user-attachments/assets/7e747351-dcaa-4b46-8e38-8372f0a8baac">
 
@@ -145,15 +148,23 @@ We're investigating whether offering mammography is a game-changer in the fight 
 Hypothesis testing is like a magnifying glass helping us determine if the difference in death rates between those who got mammography and those who didn't, Is real or just a coincidence?. We're not just hoping; we're scientifically proving that mammography is a hero in the battle against breast cancer.
 
 
-
-
 **Understanding Hypothesis Testing**
-It helps us figure out if something we believe is true is actually true or just a coincidence. Imagine you're investigating a crime (or in our case, a question), you have a suspect (null hypothesis - H0) and a claim you want to prove (alternative hypothesis - H1). Then, you gather evidence (data) and analyze it to see if there's enough proof to support your claim.
+Hypothesis testing helps us figure out if something we believe is true, Is actually true or just a coincidence? Imagine you're investigating a crime (or in our case, a question), you have a suspect (null hypothesis - H0) and a claim you want to prove (alternative hypothesis - H1). Then, you gather evidence (data) and analyze it to see if there's enough proof to support your claim.
 
 **Hypothesis Notation- It is a standard notation used in most of the Statistics Texbooks**
 
-+ H0 - Null Hypothesis
-+ H1 - Alternative Hypothesis
+
++ H0 - Null Hypothesis - Null hypothesis states that taking mammography doesn't decrease the risk of Heart disease.
+ 
++ H1 - Alternative Hypothesis - Alternative hypothesis(opposite of Null) states there is an effect(big/small) taking mammography.
+
+
+
+A#alternative will be against null, saying that the control group will have less death rate
+
+The total number of trials / observations = 31,000
+The hypothesized probability = 0.002
+The number of deaths due to breast cancer in the treatment group = 39
 
 **Why it's Important:**
 Hypothesis testing is crucial in science and research. It helps us make decisions based on evidence, ensuring we're not just guessing. In our case, it's about saving lives. If mammography significantly reduces the risk of death, it means a powerful tool in the fight against breast cancer!
