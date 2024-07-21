@@ -67,8 +67,19 @@ print("***************************************************")
 
 <img width="432" alt="image" src="https://github.com/hari255/Statistical-Analytics/assets/59302293/ccbfc3aa-05a4-4bf5-9958-1a5959efa4ca">
 
------
 
+## Results and Conclusion
+
++ We have effectively reduced the dimensionality of the images, from 64 to 2, using t-SNE and PCA, and plotted the 2D embeddings and projections.
+
++ Out of the two methods used above, t-SNE takes a longer time to generate embeddings but gives better visualizations with well-separated clusters for each handwritten digit.
+
++ The annotations show that while PCA gives the same clusters, the overall plot represents more of a blob and is not as well-separated as t-SNE.
+
++ t-SNE is good for visualizing the data in lower dimensions but is very slow and should only be used on small datasets, whereas PCA is more computationally efficient     and can be used on large datasets as well.
+
+-----
+-----
 
 
 
