@@ -1,7 +1,20 @@
+# Table of contents
+----
+### 1. Dimensionality Reduction
+----
+### 2. Causal Inference 
+---
+### 3. Statistical testing
+---
+### 4. Power analysis
+---
+### 5. Exploratory data analysis
+---
 
 
-# 1. Dimensionality Reduction.
-
+-----------
+-----------
+ # 1. Dimensionality Reduction.
 **Dimensionality reduction is a process used in machine learning and statistics to reduce the number of input variables in a dataset while retaining as much information as possible. This technique is crucial for handling high-dimensional data, improving model performance, and making data visualization easier. There are several methods for dimensionality reduction, including Principal Component Analysis (PCA), t-Distributed Stochastic Neighbor Embedding (t-SNE), Linear Discriminant Analysis (LDA), and Autoencoders.
 
 Principal Component Analysis (PCA) and t-Distributed Stochastic Neighbor Embedding (t-SNE) are two popular dimensionality reduction techniques used in data science. They help simplify complex datasets, making it easier to visualize and analyze data. Here’s a detailed guide to both methods**
@@ -184,14 +197,5 @@ Hypothesis testing is crucial in science and research. It helps us make decision
 
 
 
-
-
-# 4. Discriminant Analysis
-
-Discriminant analysis is a statistical technique used in `Data analysis` and `Machine learning` to classify observations into different groups based on their characteristics or features.
-
-Discriminant analysis is used when we have data with known categories (like types of fruits) and want to develop a method to classify new observations into these categories based on their features (like color, size, and shape). It helps us discover the important characteristics that differentiate between different groups, making it easier to classify new data.
-
-You can think, that logistic regression can also capable of doing this, but the main difference lies in how they model the relationship between the features and the categories. Logistic regression estimates the probabilities of belonging to different categories directly, using a logistic function. On the other hand, discriminant analysis models the distribution of the features within each category and uses Bayes' theorem to calculate the probability of belonging to each category.  Logistic regression may be preferred when the relationship between the features and the categories is more linear, while discriminant analysis may be more suitable when the distribution of the features within each category is known or assumed to be normal.
 
 
