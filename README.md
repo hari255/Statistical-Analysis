@@ -4,7 +4,7 @@
 ----
 ### 2. Causal Inference 
 ---
-### 3. Statistical testing
+### 3. Hypothesis testing
 ---
 ### 4. Power analysis
 ---
