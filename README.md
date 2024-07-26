@@ -171,6 +171,15 @@ data.head()
 
 ----
 
+#### 
+
+<img width="729" alt="Screenshot 2024-07-25 at 9 01 33 PM" src="https://github.com/user-attachments/assets/de18f7f7-bffc-4e67-baf9-d615008760c2">
+
+<img width="597" alt="Screenshot 2024-07-25 at 9 01 51 PM" src="https://github.com/user-attachments/assets/fa2f77a4-a981-49c0-a477-281c56fc6328">
+
+
+
+
 
 ## Propensity Score
 
