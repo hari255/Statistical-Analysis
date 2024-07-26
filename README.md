@@ -97,6 +97,19 @@ print("***************************************************")
 
 Causal inference is a field of study that focuses on identifying and quantifying causal relationships between variables, rather than just associations or correlations. The goal is to determine whether a change in one variable directly causes a change in another variable. This is essential in many disciplines, such as economics, epidemiology, social sciences, and machine learning, as it helps in understanding the underlying mechanisms and in making informed decisions.
 
+**In the context of this problem, Causal inference allows us to determine the cause-and-effect relationship between variables. It helps us understand whether the marketing campaign(cause) led to a change in user behavior (effect).**
+
+### Key Concepts
++ **Causal Inference:** Identifies cause-and-effect relationships.
++ **Propensity Score Matching:** Balances treatment and control groups to reduce bias.
++ **Hypothesis Testing**: Uses a two-sample t-test to compare conversions.
+
+### Hypothesis Testing
+
+Hypothesis testing is a statistical method to determine if there is enough evidence to reject a null hypothesis. Here, we use a two-sample t-test to compare the means of conversions between the treatment and control groups after the campaign.
+
+
+
 ## Dataset
 -----------
 
