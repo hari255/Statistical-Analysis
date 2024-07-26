@@ -173,6 +173,14 @@ where:
 - \(T\) is the treatment indicator (1 if treated, 0 if control).
 - \(X\) is the vector of observed covariates.
 
+
+#### propensity score before matching
+<img width="596" alt="Screenshot 2024-07-25 at 9 01 58 PM" src="https://github.com/user-attachments/assets/9d5f7c83-c287-4525-b2ad-0a1849658a22">
+
+#### Propensity score after matching
+<img width="380" alt="Screenshot 2024-07-25 at 9 02 03 PM" src="https://github.com/user-attachments/assets/d64ed79f-e750-4b69-be7e-b1fa59e088a1">
+
+
 ## Logistic Regression
 
 Logistic regression is used to estimate the propensity scores. The model predicts the probability of a user being exposed to the campaign based on their pre-treatment characteristics.
