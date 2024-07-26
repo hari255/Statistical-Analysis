@@ -8,7 +8,7 @@
 ---
 ### 4. Power analysis
 ---
-### 5. Exploratory data analysis
+### 5. Descriptive Analysis
 ---
 
 
