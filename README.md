@@ -113,6 +113,49 @@ Causal inference is a field of study that focuses on identifying and quantifying
 | Conversions Difference|  The difference in the number of conversions before and after the campaign exposure (conversions_after - conversions_before). This variable is used to measure the change in user behavior due to the campaign. | Int |
 | Propensity Score | The probability of a user being exposed to the campaign based on their characteristics (e.g., clicks_before and conversions_before). This score is used in propensity score matching to create comparable treatment and control groups. | Float | 
 
+#### Python code to generate above data
+
+```py
+import pandas as pd
+import numpy as np
+
+# Simulating  user data
+np.random.seed(42)
+n_users = 1000
+user_ids = np.arange(1, n_users + 1)
+
+
+
+# Simulating  campaign exposure using Binominal distribution
+exposed = np.random.binomial(1, 0.5, n_users)
+
+# Simulate engagement metrics
+
+clicks_before = np.random.poisson(1, n_users)
+
+clicks_after = clicks_before + exposed + np.random.poisson(1, n_users)
+
+conversions_before = np.random.binomial(1, 0.1, n_users)
+
+conversions_after = conversions_before + exposed + np.random.binomial(1, 0.1, n_users)
+
+# Create DataFrame
+data = pd.DataFrame({
+    'user_id': user_ids,
+    'exposed': exposed,
+    'clicks_before': clicks_before,
+    'clicks_after': clicks_after,
+    'conversions_before': conversions_before,
+    'conversions_after': conversions_after
+})
+
+data.head()
+
+
+```
+
+
+
 ----
 
 
