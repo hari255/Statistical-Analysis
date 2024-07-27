@@ -223,7 +223,9 @@ Nearest Neighbors Matching is used to match each treated user with a control use
 
 ## Difference-in-Differences (DiD)
 
-The Difference-in-Differences method estimates the treatment effect by comparing the changes in outcomes over time between the treatment and control groups. This method helps to account for time-invariant unobserved confounders.
+**The Difference-in-Differences (DiD) method is a statistical technique used to estimate the causal effect of a treatment by comparing the changes in outcomes over time between a treatment group and a control group. Here's how to interpret the DiD estimates for clicks and conversions:**
+
+
 
 ```py
 did_clicks = (treatment['clicks_diff'].mean() - matched_control['clicks_diff'].mean())
@@ -233,8 +235,15 @@ print(f'DiD Estimate for Clicks: {did_clicks}')
 print(f'DiD Estimate for Conversions: {did_conversions}')
 
 ```
-DiD Estimate for Clicks: 1.1126760563380282
-DiD Estimate for Conversions: 0.9396378269617707
+**DiD Estimate for Clicks: 1.1126760563380282**    **What it means?**
+
+_The DiD estimate of 1.1127 for clicks indicates that the marketing campaign led to an average increase of approximately 1.11 clicks per user in the treatment group compared to the control group._
+
+
+
+**DiD Estimate for Conversions: 0.9396378269617707**  **What it means?**
+
+The DiD estimate of 0.9396 for conversions indicates that the marketing campaign led to an average increase of approximately 0.94 conversions per user in the treatment group compared to the control group.
 
 
 
