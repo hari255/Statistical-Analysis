@@ -225,6 +225,18 @@ Nearest Neighbors Matching is used to match each treated user with a control use
 
 The Difference-in-Differences method estimates the treatment effect by comparing the changes in outcomes over time between the treatment and control groups. This method helps to account for time-invariant unobserved confounders.
 
+```py
+did_clicks = (treatment['clicks_diff'].mean() - matched_control['clicks_diff'].mean())
+did_conversions = (treatment['conversions_diff'].mean() - matched_control['conversions_diff'].mean())
+
+print(f'DiD Estimate for Clicks: {did_clicks}')
+print(f'DiD Estimate for Conversions: {did_conversions}')
+
+```
+DiD Estimate for Clicks: 1.1126760563380282
+DiD Estimate for Conversions: 0.9396378269617707
+
+
 
 
 ----
