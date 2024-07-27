@@ -180,7 +180,7 @@ data.head()
 
 
 
-
+---
 ## Propensity Score
 
 **Propensity Score** is the probability of a unit (e.g., a user) being assigned to the treatment group given a set of observed covariates. It helps to balance the treatment and control groups on these covariates, making the groups comparable for causal inference.
@@ -202,7 +202,7 @@ where:
 #### Propensity score after matching
 <img width="380" alt="Screenshot 2024-07-25 at 9 02 03 PM" src="https://github.com/user-attachments/assets/d64ed79f-e750-4b69-be7e-b1fa59e088a1">
 
-
+---
 ## Logistic Regression
 
 Logistic regression is used to estimate the propensity scores. The model predicts the probability of a user being exposed to the campaign based on their pre-treatment characteristics.
@@ -216,16 +216,16 @@ The logistic regression model estimates the probability \(P(T = 1 \mid X)\) as:
 where:
 - \(\alpha\) is the intercept.
 - \(\beta_1, \beta_2, \ldots, \beta_n\) are the coefficients for the covariates \(X_1, X_2, \ldots, X_n\).
+---
 
 ## Nearest Neighbors Matching
 
-Nearest Neighbors Matching is used to match each treated user with a control user who has a similar propensity score. This helps to create a balanced dataset where the treatment and control groups are comparable.
+**Nearest Neighbors Matching is used to match each treated user with a control user who has a similar propensity score. This helps to create a balanced dataset where the treatment and control groups are comparable.**
 
+---
 ## Difference-in-Differences (DiD)
 
 **The Difference-in-Differences (DiD) method is a statistical technique used to estimate the causal effect of a treatment by comparing the changes in outcomes over time between a treatment group and a control group. Here's how to interpret the DiD estimates for clicks and conversions:**
-
-
 
 ```py
 did_clicks = (treatment['clicks_diff'].mean() - matched_control['clicks_diff'].mean())
@@ -235,16 +235,18 @@ print(f'DiD Estimate for Clicks: {did_clicks}')
 print(f'DiD Estimate for Conversions: {did_conversions}')
 
 ```
-**DiD Estimate for Clicks: 1.1126760563380282**    **What it means?**
+**DiD Estimate for Clicks: 1.1126760563380282**   
+**What it means?**
+ + _The DiD estimate of 1.1127 for clicks indicates that the marketing campaign led to an average increase of approximately 1.11 clicks per user in the treatment group compared to the control group._
 
-_The DiD estimate of 1.1127 for clicks indicates that the marketing campaign led to an average increase of approximately 1.11 clicks per user in the treatment group compared to the control group._
+**Interpretation:**_This suggests that, after accounting for any time-invariant unobserved confounders, the campaign had a positive effect on user engagement in terms of clicks. Users exposed to the campaign clicked more frequently than those who were not exposed_
 
 
+**DiD Estimate for Conversions: 0.9396378269617707**  
+**What it means?**
+ + _The DiD estimate of 0.9396 for conversions indicates that the marketing campaign led to an average increase of approximately 0.94 conversions per user in the treatment group compared to the control group._
 
-**DiD Estimate for Conversions: 0.9396378269617707**  **What it means?**
-
-The DiD estimate of 0.9396 for conversions indicates that the marketing campaign led to an average increase of approximately 0.94 conversions per user in the treatment group compared to the control group.
-
+**Interpretation:**_This suggests that the campaign also positively impacted user behavior in terms of conversions. Users exposed to the campaign converted (e.g., made purchases or completed desired actions) more frequently than those who were not exposed._
 
 
 
