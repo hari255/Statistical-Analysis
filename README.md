@@ -95,14 +95,17 @@ print("***************************************************")
 -----
 # 2. Causal Inference
 
-Causal inference is a field of study that focuses on identifying and quantifying causal relationships between variables, rather than just associations or correlations. The goal is to determine whether a change in one variable directly causes a change in another variable. This is essential in many disciplines, such as economics, epidemiology, social sciences, and machine learning, as it helps in understanding the underlying mechanisms and in making informed decisions.
 
-**In the context of this problem, Causal inference allows us to determine the cause-and-effect relationship between variables. It helps us understand whether the marketing campaign(cause) led to a change in user behavior (effect).**
+ The goal is to determine whether a change in one variable directly causes a change in another variable, and causal inference help us in achieving it. This is essential in many disciplines, such as economics, epidemiology, social sciences, and machine learning, as it helps in understanding the underlying mechanisms and in making data driven/informed decisions.
 
-### Key Concepts
+ ### Key Concepts
 + **Causal Inference:** Identifies cause-and-effect relationships.
 + **Propensity Score Matching:** Balances treatment and control groups to reduce bias.
 + **Hypothesis Testing**: Uses a two-sample t-test to compare conversions.
+
+
+**In the context of this problem, Causal inference allows us to determine the cause-and-effect relationship between variables. It helps us understand whether the marketing campaign(cause) led to a change in user behavior (effect).**
+
 
 ### Hypothesis Testing
 
@@ -185,15 +188,7 @@ data.head()
 
 **Propensity Score** is the probability of a unit (e.g., a user) being assigned to the treatment group given a set of observed covariates. It helps to balance the treatment and control groups on these covariates, making the groups comparable for causal inference.
 
-#### Formula
 
-Given a set of covariates \(X\), the propensity score \(e(X)\) is defined as:
-
-\[ e(X) = P(T = 1 \mid X) \]
-
-where:
-- \(T\) is the treatment indicator (1 if treated, 0 if control).
-- \(X\) is the vector of observed covariates.
 
 
 #### propensity score before matching
@@ -203,24 +198,9 @@ where:
 <img width="380" alt="Screenshot 2024-07-25 at 9 02 03 PM" src="https://github.com/user-attachments/assets/d64ed79f-e750-4b69-be7e-b1fa59e088a1">
 
 ---
-## Logistic Regression
+#### Nearest Neighbors Matching
 
-Logistic regression is used to estimate the propensity scores. The model predicts the probability of a user being exposed to the campaign based on their pre-treatment characteristics.
-
-#### Formula
-
-The logistic regression model estimates the probability \(P(T = 1 \mid X)\) as:
-
-\[ P(T = 1 \mid X) = \frac{1}{1 + \exp^{-(\alpha + \beta_1 \cdot X_1 + \beta_2 \cdot X_2 + \ldots + \beta_n \cdot X_n)}} \]
-
-where:
-- \(\alpha\) is the intercept.
-- \(\beta_1, \beta_2, \ldots, \beta_n\) are the coefficients for the covariates \(X_1, X_2, \ldots, X_n\).
----
-
-## Nearest Neighbors Matching
-
-**Nearest Neighbors Matching is used to match each treated user with a control user who has a similar propensity score. This helps to create a balanced dataset where the treatment and control groups are comparable.**
+** k-NN is used to match each treated user with a control user who has a similar propensity score. This helps to create a balanced dataset where the treatment and control groups are comparable.**
 
 ---
 ## Difference-in-Differences (DiD)
